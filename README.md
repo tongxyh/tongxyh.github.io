@@ -1,9 +1,4 @@
-# HTML
-Add Images:
-
-```
-<img src="./fatzhai.jpeg"  alt="test" />
-```
+# My Homepage
 
 # TODO
-add images
+Add github link
