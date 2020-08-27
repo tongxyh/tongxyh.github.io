@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #
 ###################################
 # Site wide configuration
@@ -72,3 +73,6 @@ owner:
   telegram: #username
   tripadvisor : #username
   strava: #username
+=======
+theme: jekyll-theme-minimal
+>>>>>>> 8dd7ba89bf3fe41d1b0d33e0c53f40fd4aca2efd
