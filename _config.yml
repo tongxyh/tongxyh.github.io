@@ -1,0 +1,74 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Tong Chen
+email: tong@smail.nju.edu.cn
+description: Student
+url:
+keywords: ["homepage", "blog", "tong"]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Beijing
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: tong chen
+  avatar: avatar.jpeg
+  job: "Student 🚀⚽🎹"
+  bio: "xxx | football⚽ fan | music🎹"
+  email: tong@smail.nju.edu.cn
+  # disqus-shortname: jakenherman-com
+  twitter: tongxyh
+  amazon-author: #username
+  facebook: #username
+  # google:
+  #   plus: #username
+  #   analytics: UA-134666359-1
+  #   verify:
+  #   ad-client:
+  #   ad-slot:
+  # bing-verify:
+  github: tongxyh
+  gitlab: chenttoong
+  stackoverflow: #username 
+  linkedin: #username
+  skype: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  # dribbble: jakenherman
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  # codepen: JakenHerman
+  reddit: #username
+  telegram: #username
+  tripadvisor : #username
+  strava: #username

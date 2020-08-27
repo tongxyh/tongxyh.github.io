@@ -1,0 +1,70 @@
+<script type="text/javascript">
+  // based on http://stackoverflow.com/a/10300743/280842
+  function gen_mail_to_link(hs, subject) {
+    var lhs,rhs;
+    var p = hs.split('@');
+    lhs = p[0];
+    rhs = p[1];
+    document.write("<a aria-label=\"Email My\" class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+    document.write(":" + lhs + "@");
+    document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+  }
+</script>
+<div class="social-links">
+  <ul>
+    {% if author.email %}
+      <li>
+      <script>gen_mail_to_link('{{ author.email }}', 'Hello from website');</script>
+      </li>
+    {% endif %}
+    {% if author.twitter %}<li><a aria-label="Go to My's Twitter Page" rel="noreferrer" href="http://twitter.com/{{ author.twitter }}" class="social-link-item" target="_blank"><i class="fab fa-twitter"></i></a></li>{% endif %}
+    {% if author.tripadvisor %}<li><a aria-label="Go to My's TripAdvisor Page" rel="noreferrer" href="https://www.tripadvisor.com/Profile/{{ author.tripadvisor }}" class="social-link-item" target="_blank"><i class="fab fa-tripadvisor"></i></a></li>{% endif %}
+   <!-- {% if author.untappd %}<li><a rel="noreferrer" href="https://untappd.com/user/{{ author.untappd }}" class="social-link-item" target="_blank"><i class="fab fa-untappd"></i></a></li>{% endif %} -->
+    {% if author.facebook %}<li><a rel="noreferrer" href="http://facebook.com/{{ author.facebook }}" class="social-link-item" target="_blank"><i class="fab fa-facebook"></i></a></li>{% endif %}
+    {% if author.google.plus %}<li><a rel="noreferrer" href="http://plus.google.com/+{{ author.google.plus }}" class="social-link-item" target="_blank"><i class="fab fa-google-plus"></i> Google+</a></li>{% endif %}
+    {% if author.linkedin %}<li><a aria-label="Go to My's LinkedIn Page" rel="noreferrer" href="http://linkedin.com/in/{{ author.linkedin }}" class="social-link-item" target="_blank"><i class="fab fa-linkedin"></i></a></li>{% endif %}
+    <!-- <li><a aria-label="Go to Jaken HYelpoerman's Yelp Page" rel="noreferrer" href="https://www.yelp.com/user_details?userid=Wu6Cbv_59QNDmNlw02cqMA" class="social-link-item" target="_blank"><i class="fab fa-yelp"></i></a></li> -->
+    {% if author.skype %}<li><a aria-label="Skype with My" rel="noreferrer" href="skype:{{ author.skype }}" class="social-link-item" target="_blank"><i class="fab fa-skype"></i></a></li>{% endif %}
+    {% if author.xing %}<li><a rel="noreferrer" href="http://www.xing.com/profile/{{ author.xing }}" class="social-link-item" target="_blank"><i class="fab fa-xing"></i></a></li>{% endif %}
+    {% if author.instagram %}<li><a aria-label="Go to My's Instagram Page" rel="noreferrer" href="http://instagram.com/{{ author.instagram }}" class="social-link-item" target="_blank"><i class="fab fa-instagram"></i></a></li>{% endif %}
+    {% if author.tumblr %}<li><a rel="noreferrer" href="http://{{ author.tumblr }}.tumblr.com" class="social-link-item" target="_blank"><i class="fab fa-tumblr"></i></a></li>{% endif %}
+    {% if author.github %}<li><a aria-label="Go to My's GitHub Page" rel="noreferrer" href="http://github.com/{{ author.github }}" class="social-link-item" target="_blank"><i class="fab fa-github"></i></a></li>{% endif %}
+    {% if author.gitlab %}<li><a rel="noreferrer" href="http://gitlab.com/{{ author.gitlab }}" class="social-link-item" target="_blank"><i class="fab fa-gitlab"></i></a></li>{% endif %}
+    {% if author.stackoverflow %}<li><a aria-label="Go to My's StackOverflow Page" rel="noreferrer" href="http://stackoverflow.com/users/{{ author.stackoverflow }}" class="social-link-item" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>{% endif %}
+    {% if author.lastfm %}<li><a rel="noreferrer" href="http://lastfm.com/user/{{ author.lastfm }}" class="social-link-item" target="_blank"><i class="fab fa-music"></i></a></li>{% endif %}
+    {% if author.dribbble %}<li><a rel="noreferrer" href="http://dribbble.com/{{ author.dribbble }}" class="social-link-item" target="_blank"><i class="fab fa-dribbble"></i></a></li>{% endif %}
+    {% if author.pinterest %}<li><a rel="noreferrer" href="http://www.pinterest.com/{{ author.pinterest }}" class="social-link-item" target="_blank"><i class="fab fa-pinterest"></i></a></li>{% endif %}
+    {% if author.foursquare %}<li><a rel="noreferrer" href="http://foursquare.com/{{ author.foursquare }}" class="social-link-item" target="_blank"><i class="fab fa-foursquare"></i></a></li>{% endif %}
+    {% if author.steam %}<li><a rel="noreferrer" href="http://steamcommunity.com/id/{{ author.steam }}" class="social-link-item" target="_blank"><i class="fab fa-steam"></i></a></li>{% endif %}
+    {% if author.youtube %}<li><a aria-label="Go to My's YouTube Channel" rel="noreferrer" href="http://bit.ly/thehermans" class="social-link-item" target="_blank"><i class="fab fa-youtube"></i></a></li>{% endif %}
+    {% if author.soundcloud %}<li><a rel="noreferrer" href="http://soundcloud.com/{{ author.soundcloud }}" class="social-link-item" target="_blank"><i class="fab fa-soundcloud"></i></a></li>{% endif %}
+    {% if author.weibo %}<li><a rel="noreferrer" href="http://www.weibo.com/{{ author.weibo }}" class="social-link-item" target="_blank"><i class="fab fa-weibo"></i></a></li>{% endif %}
+    {% if author.flickr %}<li><a rel="noreferrer" href="http://www.flickr.com/{{ author.flickr }}" class="social-link-item" target="_blank"><i class="fab fa-flickr"></i></a></li>{% endif %}
+    {% if author.500px %}<li><a rel="noreferrer" href="http://www.500px.com/{{ author.500px }}" class="social-link-item" target="_blank"><i class="fab fa-500px"></i></a></li>{% endif %}
+    {% if author.codepen %}<li><a rel="noreferrer" href="http://codepen.io/{{ author.codepen }}" class="social-link-item" target="_blank"><i class="fab fa-codepen"></i></a></li>{% endif %}
+    {% if author.reddit %}<li><a rel="noreferrer" href="https://reddit.com/user/{{ author.reddit }}" class="social-link-item" target="_blank"><i class="fab fa-reddit"></i></a></li>{% endif %}
+    {% if author.telegram %}<li><a rel="noreferrer" href="https://t.me/{{ author.telegram }}" class="social-link-item" target="_blank"><i class="fab fa-telegram"></i></a></li>{% endif %}
+    {% if author.amazon-author %}<li><a aria-label="Go to My's Amazon Author Page" rel="noreferrer" href="https://{{ author.amazon-author }}" class="social-link-item" target="_blank"><i class="fab fa-amazon"></i></a></li>{% endif %}
+    {% if author.strava %}<li><a aria-label="Go to My's Strava Page" rel="noreferrer" href="https://strava.com/athletes/{{ author.strava }}" class="social-link-item" target="_blank"><i class="fab fa-strava"></i></a>
+    </li>{% endif %}
+    <!-- <li><a aria-label="Go to My's Dev Page" rel="noreferrer" href="https://dev.to/jakenherman" class="social-link-item" target="_blank"><i class="fab fa-dev"></i></a></li> -->
+    <!-- <li><a aria-label="Go to My's Untappd Page" rel="noreferrer" href="https://untappd.com/user/JakenH" class="social-link-item" target="_blank"><i class="fab fa-untappd"></i></a></li> -->
+  </ul>
+
+  <br />
+  <h6>life accomplishments</h6>
+  <ul>
+    <li>
+      <img src="{{ site.url }}/img/StrenuousLifeBadges/ancestry.png" alt="Ancestry Badge" height="30" width="30" />
+    </li>
+    <li>
+      <img src="{{ site.url }}/img/StrenuousLifeBadges/craftsman.png" alt="Craftsman Badge" height="30" width="30" />
+    </li>
+    <li>
+      <img src="{{ site.url }}/img/StrenuousLifeBadges/host.png" alt="Host Badge" height="30" width="30" />
+    </li>
+    <li>
+      <img src="{{ site.url }}/img/StrenuousLifeBadges/orator.png" alt="Orator Badge" height="30" width="30" />
+    </li>
+  </ul>
+</div>

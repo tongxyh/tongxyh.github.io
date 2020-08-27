@@ -1,0 +1,13 @@
+- name: Deep Image Compression
+  descr: Implementation of ICASSP2020 paper "Variable Bitrate Image Compression with Quality Scaling Factors"
+  image: pong.png
+  github: https://github.com/tongxyh/ImageCompression_VariableRate
+  website: https://github.com/tongxyh/ImageCompression_VariableRate
+
+# - name: kcats
+#   descr: kcats is a stack implementation in node that allows multiple stacks to be created in one object. 
+#   image: pong.png
+#   github: https://github.com/JakenHerman/kcats
+#   website: https://jakenherman.com/kcats
+
+

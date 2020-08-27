@@ -1,0 +1,6 @@
+# skills section data
+
+label: Ability
+id : cs
+aspects: Sleep, Eat, Play, Work
+percentage: 100, 100, 100, 10

@@ -1,0 +1,20 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+# - name: Houston Astros
+#   date: August 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+#   job: Front-End Developer
+
+- name: Horizon Robotics
+  link: http://www.horizon.ai/
+  date: July 2019 - August 2019 
+  job: Engineer
+
+- name: Netease
+  link: http://www.163.com/
+  date: June 2017 - August 2017
+  job: Engineer
+
+# - name: Nanjing University
+#   link: https://www.nju.edu.cn/
+#   date: September 2011 - June 2015
+#   job: B.S
