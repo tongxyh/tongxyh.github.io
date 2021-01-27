@@ -31,3 +31,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "kramdown", ">= 2.3.0"
 gem "activesupport", ">= 4.1.11"
 gem "nokogiri", ">= 1.11.0"
+gem "json", ">= 2.3.0"
