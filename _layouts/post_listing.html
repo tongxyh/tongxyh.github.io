@@ -14,7 +14,6 @@ layout: default
       {% for cat in post.categories %}
         <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
         {% unless forloop.last %}
-        <span>/</span>
         {% endunless %}
       {% endfor %}
       {% endif %}
@@ -57,6 +56,5 @@ layout: default
       {% endif %}
     </div><!-- /.image-wrap -->
     {% endif %}
-
 </section>
 {% endfor %}
