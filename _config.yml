@@ -4,8 +4,8 @@
 ####################################
 #
 title: Tong Chen
-email: tong@smail.nju.edu.cn
-description: Student
+email: chentong@nju.edu.cn
+description: Associate Researcher
 url:
 keywords: ["homepage", "blog", "tong"]
 
@@ -35,9 +35,9 @@ kramdown:
 owner:
   name: Tong Chen
   avatar: avatar_iqiyi.png
-  job: "Ph.D"
+  job: "Ph.D., Associate Researcher"
   bio: "space🚀 | football⚽ | music🎹"
-  email: tong@smail.nju.edu.cn
+  email: chentong@nju.edu.cn
   # disqus-shortname: jakenherman-com
   twitter: tongxyh
   amazon-author: #username
@@ -56,7 +56,6 @@ owner:
   skype: #username
   xing: #username
   instagram: #username
-  lastfm: #username
   tumblr: #username
   pinterest: #username
   foursquare: #username
