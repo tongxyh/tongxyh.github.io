@@ -4,6 +4,11 @@
 #   date: August 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
 #   job: Front-End Developer
 
+- name: Nanjing University
+  link: https://vision.nju.edu.cn/fc/d8/c29470a457944/page.htm
+  date: July 2023 - Now 
+  job: Associate Researcher
+
 - name: Horizon Robotics
   link: http://www.horizon.ai/
   date: July 2019 - August 2019 
@@ -13,8 +18,3 @@
   link: http://www.163.com/
   date: June 2017 - August 2017
   job: Engineer
-
-# - name: Nanjing University
-#   link: https://www.nju.edu.cn/
-#   date: September 2011 - June 2015
-#   job: B.S
