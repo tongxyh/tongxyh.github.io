@@ -10,7 +10,7 @@
 }
 @include media-query($medium-screen) {
   .container {
-    width: 90%;
+    width: 80%;
   }
 }
 @include media-query($large-screen) {
