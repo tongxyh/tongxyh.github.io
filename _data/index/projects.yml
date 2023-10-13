@@ -4,6 +4,11 @@
   github: https://github.com/tongxyh/ImageCompression_VariableRate
   website: https://github.com/tongxyh/ImageCompression_VariableRate
 
+- name: Deep Point Cloud Compression
+  descr: deep point cloud compression
+  image: 
+  github: 
+  website: 
 # - name: kcats
 #   descr: kcats is a stack implementation in node that allows multiple stacks to be created in one object. 
 #   image: pong.png
