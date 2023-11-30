@@ -31,6 +31,7 @@
 // Post Section
 section.post {
 	margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 // Back home button
@@ -46,7 +47,8 @@ section.post {
 
 // Post title
 .post-title {
-
+	margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .post-title-link {
@@ -63,6 +65,8 @@ section.post {
 .post-meta {
   font-size: 13px;
   font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 10px; //margin before date
 	.post-date {
 		color: $secondary;
 	}
@@ -88,9 +92,9 @@ a.read-more {
 // Post content
 
 #post {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   .post-header {
-    margin: 0 auto 50px;
+    margin: 0 auto 10px;
   }
 }
 
