@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <h1><span data-i18n="skills.my_skills">News</span></h1>
 
 {% for post in site.posts %}
@@ -54,6 +53,9 @@ layout: default
       {% endif %}
     </div><!-- /.image-wrap -->
     {% endif %}
+    <br>
 </section>
 {% endif %}
 {% endfor %}
+
+{% include sections/about.html %}
