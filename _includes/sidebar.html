@@ -14,7 +14,8 @@
       <li class="nav-item">
         <a aria-label="Tong Chen Website Link" href="{{ site.url }}/">home</a>
       </li>
-      {% for page in site.pages %} {% if page.title %}
+      {% assign pages_to_show = "Home|Resume" | split: "|" %}
+      {% for page in site.pages %} {% if page.title and pages_to_show contains page.title%}
       <li class="nav-item">
         <a aria-label="Navigate to Article - {{page.title}}" href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
       </li>

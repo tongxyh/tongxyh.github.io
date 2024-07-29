@@ -83,9 +83,9 @@
     &:after {
       content: '/';
     }
-    &:last-child:after {
-      content: '';
-    }
+    // &:last-child:after {
+    //   content: '';
+    // }
     & a {
       margin-top: 1em;
       text-transform: lowercase;
