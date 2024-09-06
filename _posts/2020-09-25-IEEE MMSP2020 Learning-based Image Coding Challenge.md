@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Best Performance Award in IEEE MMSP 2020 Learning-based Image Coding Challenge"
-excerpt: "Best Performance Award"
+excerpt: ""
 comments : true
 date:   2020-09-25 19:00:00 +0800
 categories: [academic]
