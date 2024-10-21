@@ -85,6 +85,7 @@
         &.m#{$i} {
           width: $perc;
           margin-left: 0;
+          margin-right: 0;
         }
         $i: $i + 1;
       }
