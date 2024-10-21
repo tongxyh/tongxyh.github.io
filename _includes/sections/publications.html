@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Publications</title>
+    <title>Publications</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,10 +12,21 @@
             color: #333;
         }
         ol {
-            list-style-type: decimal;
+            list-style-type: none; /* Remove default list numbering */
+            padding-left: 0; /* Removes left padding */
+            margin-left: 0; /* Removes left margin */
         }
-        li {
+        ol li {
+            counter-increment: item; /* Increment counter for each list item */
             margin-bottom: 10px;
+            padding-left: 0; /* Removes left padding */
+            margin-left: 0; /* Removes left margin */
+        }
+        ol li::before {
+            content: "[" counter(item) "] "; /* Add counter in square brackets before each item */
+        }
+        li:hover {
+            background-color: #f9f9f9; /* Adds a hover effect */
         }
         .publication-title {
             font-style: italic;
@@ -32,24 +43,25 @@
 </head>
 <body>
     <h1>Publications</h1>
-    <ol> 
-        <ul>       
-            <li>J. Shi, M. Jiang, M. Lu*, <strong>Tong Chen</strong>, X. Cao, and Z. Ma. "HINER: Neural Representation for Hyperspectral Image", <em>ACM MM</em>, in Melbourne, Australia, Oct. 2024.</li>
+    <section>
+        <ol> 
+            <li>Zhang Junteng, <strong>Tong Chen*</strong>, Hao Zhu, Dong Wang, Dandan Ding, and Zhan Ma. "Compressing 3D Gaussian Splatting via a Generalizable Neural Coder", <em>VCIP</em>, Tokyo, Japan, Dec 8-11, 2024.</li>
+            
+            <li>Junqi Shi, Mingyi Jiang, Ming Lu, <strong>Tong Chen</strong>, Xun Cao, and Zhan Ma. "HINER: Neural Representation for Hyperspectral Image", <em>ACM MM</em>, in Melbourne, Australia, Oct. 2024.</li>
 
-            <li>Ruixiang Xue, Jiaxin Li, <strong>Tong Chen*</strong>, Dandan Ding, Xun Cao, and Zhan Ma. "NeRI: Implicit Neural Representation of LiDAR Point Cloud Using Range Image Sequence", <em>IEEE ICASSP</em>, 2024. <a href="https://github.com/RuixiangXue/NeRI" target="_blank">[Project Website]</a></li>
+            <li>Ruixiang Xue, Jiaxin Li, <strong>Tong Chen*</strong>, Dandan Ding, Xun Cao, and Zhan Ma. "NeRI: Implicit Neural Representation of LiDAR Point Cloud Using Range Image Sequence", <em>IEEE ICASSP</em>, 2024. <a href="https://github.com/RuixiangXue/NeRI" target="_blank" rel="noopener noreferrer">[Project Website]</a></li>
         
             <li>Shaohan Sun, Yuzhuo Kong, <strong>Tong Chen*</strong>, and Zhan Ma, "Variable rate Neural Speech Compression with Multiscale Feature Extraction and Improved Entropy Modeling", <em>DCC</em>, 2024.</li>
         
-            <li>Junzhe Zhang#, <strong>Tong Chen#</strong>, Dandan Ding, and Zhan Ma, "G-PCC++: Enhanced Geometry-based Point Cloud Compression", <em>ACM MM</em>, Oct. 2023. <a href="#" target="_blank">[Project Website]</a> (oral)</li>
+            <li>Junzhe Zhang#, <strong>Tong Chen#</strong>, Dandan Ding, and Zhan Ma, "G-PCC++: Enhanced Geometry-based Point Cloud Compression", <em>ACM MM</em>, Oct. 2023. <a href="#" target="_blank" rel="noopener noreferrer">[Project Website]</a> (oral)</li>
         
-            <li>Junteng Zhang#, <strong>Tong Chen#</strong>, Dandan Ding, and Zhan Ma, "YOGA: Yet Another Geometry-based Point Cloud Compressor", <em>ACM MM</em>, Oct. 2023. <a href="#" target="_blank">[Project Website]</a></li>
+            <li>Junteng Zhang#, <strong>Tong Chen#</strong>, Dandan Ding, and Zhan Ma, "YOGA: Yet Another Geometry-based Point Cloud Compressor", <em>ACM MM</em>, Oct. 2023. <a href="#" target="_blank" rel="noopener noreferrer">[Project Website]</a></li>
         
             <li><strong>Tong Chen</strong> and Zhan Ma. "Towards Robust Neural Image Compression: Adversarial Attack and Model Finetuning", <em>IEEE TCSVT</em>, 2023.</li>
         
             <li><strong>Tong Chen</strong>, Haojie Liu, Zhan Ma, Qiu Shen, Xun Cao, and Yao Wang. "End-to-End Learnt Image Compression via Non-Local Attention Optimization and Improved Context Modeling", <em>IEEE TIP</em>, 2021.</li>
         
             <li><strong>Tong Chen</strong> and Zhan Ma. "Variable Bitrate Image Compression with Quality Scaling Factors", <em>IEEE ICASSP</em>, 2020.</li>
-        </ul>
-        <!-- Add more publications below in the same format -->
-    </ol>
+        </ol>
+    </section>
 </body>
