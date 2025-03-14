@@ -1,13 +1,13 @@
-- name: Deep Image Compression
+- name: Variable-rate Learned Image Compression (ICASSP2020)
   descr: Implementation of ICASSP2020 paper "Variable Bitrate Image Compression with Quality Scaling Factors"
-  image: pong.png
+  image: 
   github: https://github.com/tongxyh/ImageCompression_VariableRate
   website: https://github.com/tongxyh/ImageCompression_VariableRate
 
-- name: Deep Point Cloud Compression
-  descr: deep point cloud compression
-  image: 
-  github: 
+- name: RENO (CVPR2025)
+  descr: Real-time LiDAR point cloud compression
+  image: Projects/reno.png
+  github: https://github.com/NJUVISION/RENO
   website: 
 # - name: kcats
 #   descr: kcats is a stack implementation in node that allows multiple stacks to be created in one object. 

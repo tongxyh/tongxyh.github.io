@@ -5,14 +5,17 @@
             <div class="col">
                 <h2 style="margin: 0">{{ project.name }}</h2>
                 <p style="margin: 0">{{ project.descr }}</p>
-
                 {% if project.github %}
                 <a href="{{ project.github }} "><i class="fa fa-fw fa-github"></i>GitHub</a>
                 {% endif %}
                 {% if project.website %}
                 <a href="{{ project.website }} ">🌐 Homepage</a>
                 {% endif %}
-
+                {% if project.image %}
+                <div class="col-1">
+                    <img src="{{site.url}}/img/{{ project.image }}" alt="{{ project.name }}" style="width: 100%;">
+                </div>
+                {% endif %}</div>
             </div>
     </div>
 {% endfor %}
