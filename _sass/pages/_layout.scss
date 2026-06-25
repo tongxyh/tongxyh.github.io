@@ -1,11 +1,10 @@
 /* LAYOUT CSS */
 .cover {
   background-color: $background-color;
-  position: fixed;
+  position: static;
   text-align: center;
   width: 100%;
-  min-height: 400px;
-  padding: 30px 15px 20px;
+  padding: 18px 15px 14px;
   z-index: 1;
   @include media-query($small-screen) {
     background-position: center;
@@ -13,7 +12,8 @@
   }
   @include media-query($medium-screen) {
     height: 100vh;
-    position: initial;
+    position: sticky;
+    top: 0;
     width: 100%;
   }
 }
@@ -22,9 +22,13 @@
   padding: 0 30px;
   .avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     float: none;
+    @include media-query($small-screen) {
+      width: 100px;
+      height: 100px;
+    }
     @include media-query($medium-screen) {
       margin-right: 0;
     }
@@ -33,24 +37,27 @@
     display: block;
     color: #626837;
     font-size: 1.5em;
-    text-transform: upcase;
+    text-transform: uppercase;
   }
   .author_job {
     display: block;
     color: $secondary;
     font-size: 0.75em;
     font-weight: 700;
-    text-transform: upcase;
+    text-transform: uppercase;
     margin: -5px auto 10px;
   }
   .author_bio {
     font-size: 90%;
     display: block;
   }
+  @include media-query($small-screen) {
+    padding: 0 30px;
+  }
   @include media-query($medium-screen) {
     text-align: right;
     margin: 0 auto;
-    padding: -10 -10px 80px;
+    padding: 0 0 80px;
   }
 }
 .social-links {
@@ -70,6 +77,88 @@
         }
       }
     }
+  }
+}
+
+.project-item {
+  margin-bottom: 1.5rem;
+
+  h2 {
+    margin: 0 0 0.25rem;
+  }
+
+  p {
+    margin: 0 0 0.25rem;
+  }
+
+  a {
+    display: inline-block;
+    margin-right: 0.75rem;
+  }
+}
+
+.project-image {
+  margin-top: 0.5rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+.publication-list {
+  ol {
+    counter-reset: item;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    counter-increment: item;
+    line-height: 1.45;
+    margin-bottom: 0.7rem;
+    padding: 0.2rem 0;
+  }
+
+  li::before {
+    content: "[" counter(item) "] ";
+  }
+
+  li:hover {
+    background-color: #f9f9f9;
+  }
+}
+
+.publication-badge {
+  border: 1px solid lighten($primary, 35%);
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 0.82em;
+  line-height: 1.2;
+  margin-left: 0.35rem;
+  padding: 0.08rem 0.32rem;
+  white-space: nowrap;
+}
+
+.section-nav {
+  border-bottom: 1px solid $hr-border-color;
+  margin: 0 0 1.25rem;
+  padding: 0 0 0.75rem;
+
+  a {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 1rem 0.35rem 0;
+  }
+}
+
+.more-link {
+  margin: 0.25rem 0 2rem;
+
+  a {
+    border-bottom: 1px solid currentColor;
+    font-weight: 600;
   }
 }
 .nav-list {

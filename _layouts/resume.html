@@ -3,28 +3,36 @@ layout: default
 ---
 <div class="row">
     <div class="col l10">
-        <div class="row">
+        <nav class="section-nav" aria-label="Resume sections">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#bio">Bio</a>
+            <a href="#education">Education</a>
+        </nav>
+
+        <div class="row" id="about">
             <div class="col">
                 {% include sections/about.html %}        
             </div>
         </div>
         
-        <div class="row">
+        <div class="row" id="projects">
             <div class="col">
                 {% include sections/projects.html %}
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="publications">
             <div class="col">
                 {% include sections/full_publications.html %}
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="bio">
             {% include sections/career.html %}    
         </div>
-        <div class="row">
+        <div class="row" id="education">
             {% include sections/education.html %}    
         </div>
     </div>

@@ -1,11 +1,10 @@
 // Post listing
 .post-listing {
   background-color: $white;
-  position: absolute;
-  top: 100px;
+  position: static;
   z-index: 233;
   width: 100%;
-  padding: 5px 20px 0;
+  padding: 20px 20px 0;
   -webkit-transform: translate3d(0,0,1px);
   transform: translate3d(0,0,1px);
   @include media-query($small-screen) {
@@ -14,8 +13,12 @@
   @include media-query($medium-screen) {
     height: 100vh;
     overflow-y: scroll;
-    position: initial;
+    position: static;
     top: 0;
+  }
+
+  > * {
+    max-width: 920px;
   }
 }
 

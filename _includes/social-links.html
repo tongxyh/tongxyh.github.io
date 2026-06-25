@@ -5,7 +5,7 @@
     var p = hs.split('@');
     lhs = p[0];
     rhs = p[1];
-    document.write("<a aria-label=\"Email My\" class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+    document.write("<a aria-label=\"Email Tong Chen\" class=\"social-link-item\" href=\"mailto");
     document.write(":" + lhs + "@");
     document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
   }
@@ -17,7 +17,7 @@
       <script>gen_mail_to_link('{{ author.email }}', 'Hello from website');</script>
       </li>
     {% endif %}
-    {% if author.scholar %}<li><a aria-label="Go to My's Google Scholar Page" rel="noreferrer" href="https://scholar.google.com/citations?hl=en&user=HfBUtiIAAAAJ" class="social-link-item" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>{% endif %}
+    {% if author.scholar %}<li><a aria-label="Go to Tong Chen's Google Scholar Page" rel="noopener noreferrer" href="https://scholar.google.com/citations?hl=en&user=HfBUtiIAAAAJ" class="social-link-item" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>{% endif %}
    <!-- {% if author.twitter %}<li><a aria-label="Go to My's Twitter Page" rel="noreferrer" href="http://twitter.com/{{ author.twitter }}" class="social-link-item" target="_blank"><i class="fab fa-twitter"></i></a></li>{% endif %} -->
    <!-- {% if author.tripadvisor %}<li><a aria-label="Go to My's TripAdvisor Page" rel="noreferrer" href="https://www.tripadvisor.com/Profile/{{ author.tripadvisor }}" class="social-link-item" target="_blank"><i class="fab fa-tripadvisor"></i></a></li>{% endif %} -->
    <!-- {% if author.untappd %}<li><a rel="noreferrer" href="https://untappd.com/user/{{ author.untappd }}" class="social-link-item" target="_blank"><i class="fab fa-untappd"></i></a></li>{% endif %} -->
@@ -29,7 +29,7 @@
     {% if author.xing %}<li><a rel="noreferrer" href="http://www.xing.com/profile/{{ author.xing }}" class="social-link-item" target="_blank"><i class="fab fa-xing"></i></a></li>{% endif %}
     {% if author.instagram %}<li><a aria-label="Go to My's Instagram Page" rel="noreferrer" href="http://instagram.com/{{ author.instagram }}" class="social-link-item" target="_blank"><i class="fab fa-instagram"></i></a></li>{% endif %}
     {% if author.tumblr %}<li><a rel="noreferrer" href="http://{{ author.tumblr }}.tumblr.com" class="social-link-item" target="_blank"><i class="fab fa-tumblr"></i></a></li>{% endif %}
-    {% if author.github %}<li><a aria-label="Go to My's GitHub Page" rel="noreferrer" href="http://github.com/{{ author.github }}" class="social-link-item" target="_blank"><i class="fab fa-github"></i></a></li>{% endif %}
+    {% if author.github %}<li><a aria-label="Go to Tong Chen's GitHub Page" rel="noopener noreferrer" href="https://github.com/{{ author.github }}" class="social-link-item" target="_blank"><i class="fab fa-github"></i></a></li>{% endif %}
     <!-- {% if author.gitlab %}<li><a rel="noreferrer" href="http://gitlab.com/{{ author.gitlab }}" class="social-link-item" target="_blank"><i class="fab fa-gitlab"></i></a></li>{% endif %} -->
     {% if author.stackoverflow %}<li><a aria-label="Go to My's StackOverflow Page" rel="noreferrer" href="http://stackoverflow.com/users/{{ author.stackoverflow }}" class="social-link-item" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>{% endif %}
     {% if author.lastfm %}<li><a rel="noreferrer" href="http://lastfm.com/user/{{ author.lastfm }}" class="social-link-item" target="_blank"><i class="fab fa-music"></i></a></li>{% endif %}

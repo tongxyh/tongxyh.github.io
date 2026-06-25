@@ -1,59 +1,17 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 5px;
-        }
-        h1 {
-            color: #333;
-        }
-        ol {
-            list-style-type: none; /* Remove default list numbering */
-            padding-left: 0; /* Removes left padding */
-            margin-left: 0; /* Removes left margin */
-        }
-        ol li {
-            counter-increment: item; /* Increment counter for each list item */
-            margin-bottom: 10px;
-            padding-left: 0; /* Removes left padding */
-            margin-left: 0; /* Removes left margin */
-        }
-        ol li::before {
-            content: "[" counter(item) "] "; /* Add counter in square brackets before each item */
-        }
-        li:hover {
-            background-color: #f9f9f9; /* Adds a hover effect */
-        }
-        .publication-title {
-            font-style: italic;
-        }
-        .publication-authors {
-            font-weight: normal;
-        }
-        .publication-info {
-            display: block;
-            margin-top: 4px;
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-    <h1>Selected Publications</h1>
-    <section>
-        <ol> 
+<h1>Selected Publications</h1>
+<section class="publication-list">
+        <ol>
+            <li><strong>陈彤</strong>，陆明，石峻奇，丛吾洋，丁丹丹，贾川民，刘家瑛，刘东，宋利，马思伟，杨铀，刘文予，曹汛，马展，“端到端智能图像视频编码的发展回顾与前沿展望”，<em>中国图象图形学报</em>，第31卷第6期，1595-1618页，2026年。<a class="publication-badge" href="https://www.cjig.cn/zh/article/doi/10.11834/jig.250627/" target="_blank" rel="noopener noreferrer">论文</a></li>
+
             <li>Hanfei Li, Anle Ke, Jiawen Gu, Chao Zhou, <strong>Tong Chen*</strong>, and Zhan Ma, "MG-VLQA: Multi-Granularity Quality Assessment for Image Compression via Visual Language Models," <em>DCC</em>, 2026. <strong style="color: red;">(Full Paper)</strong></li>
             
             <li>Junteng Zhang, <strong>Tong Chen</strong>, Dandan Ding, and Zhan Ma, "Neural Compression System for Point Cloud Video Streaming," <em>IEEE TIP</em>, Nov, 2025.</li>
             
-            <li>Junzhe Zhang, <strong>Tong Chen#</strong>, Dandan Ding, and Zhan Ma, "Revisit Point Cloud Quality Assessment: Current Advances and a Multiscale-Inspired Approach," <em>IEEE TVCG</em>, June 2025. <a href="https://github.com/3dpcc/PQI" target="_blank" rel="noopener noreferrer">[Project Website]</a></li>
+            <li>Junzhe Zhang, <strong>Tong Chen#</strong>, Dandan Ding, and Zhan Ma, "Revisit Point Cloud Quality Assessment: Current Advances and a Multiscale-Inspired Approach," <em>IEEE TVCG</em>, June 2025. <a class="publication-badge" href="https://github.com/3dpcc/PQI" target="_blank" rel="noopener noreferrer">Project</a></li>
 
-            <li>Anle Ke, Xu Zhang, <strong>Tong Chen*</strong>, Ming Lu, Chao Zhou, Jiawen Gu, and Zhan Ma. "Ultra Lowrate Image Compression with Semantic Residual Coding and Compression-Aware Diffusion," <em>ICML</em>, 2025.<a href="https://github.com/NJUVISION/ResULIC" target="_blank" rel="noopener noreferrer">[Project Website]</a></li>
+            <li>Anle Ke, Xu Zhang, <strong>Tong Chen*</strong>, Ming Lu, Chao Zhou, Jiawen Gu, and Zhan Ma. "Ultra Lowrate Image Compression with Semantic Residual Coding and Compression-Aware Diffusion," <em>ICML</em>, 2025. <a class="publication-badge" href="https://github.com/NJUVISION/ResULIC" target="_blank" rel="noopener noreferrer">Project</a></li>
 
-            <li>Kang You, <strong>Tong Chen*</strong>, Dandan Ding, M. Salman Asif, and Zhan Ma. "RENO: Real-time Neural Compression for 3D LiDAR Point Clouds", <em>CVPR</em>, 2025. <a href="https://github.com/NJUVISION/RENO" target="_blank" rel="noopener noreferrer">[Project Website]</a></li>
+            <li>Kang You, <strong>Tong Chen*</strong>, Dandan Ding, M. Salman Asif, and Zhan Ma. "RENO: Real-time Neural Compression for 3D LiDAR Point Clouds", <em>CVPR</em>, 2025. <a class="publication-badge" href="https://github.com/NJUVISION/RENO" target="_blank" rel="noopener noreferrer">Project</a></li>
             
             <li>Junqi Shi, Zhujia Chen, Hanfei Li, Qi Zhao, Ming Lu, <strong>Tong Chen</strong>, and Zhan Ma, "On Quantizing Neural Representation for Variable-Rate Video Coding," <em>ICLR</em>, May, 2025. <strong style="color: red;">(Spotlight)</strong></li>
 
@@ -61,14 +19,13 @@
 
             <li>Junteng Zhang, <strong>Tong Chen*</strong>, Hao Zhu, Dong Wang, Dandan Ding, and Zhan Ma. "Compressing 3D Gaussian Splatting via a Generalizable Neural Coder", <em>VCIP</em>, Tokyo, Japan, Dec, 2024. <strong style="color: red;">(oral)</strong></li>
 
-            <li>Ruixiang Xue, Jiaxin Li, <strong>Tong Chen*</strong>, Dandan Ding, Xun Cao, and Zhan Ma. "NeRI: Implicit Neural Representation of LiDAR Point Cloud Using Range Image Sequence", <em>IEEE ICASSP</em>, 2024. <a href="https://github.com/RuixiangXue/NeRI" target="_blank" rel="noopener noreferrer">[Project Website]</a></li>
+            <li>Ruixiang Xue, Jiaxin Li, <strong>Tong Chen*</strong>, Dandan Ding, Xun Cao, and Zhan Ma. "NeRI: Implicit Neural Representation of LiDAR Point Cloud Using Range Image Sequence", <em>IEEE ICASSP</em>, 2024. <a class="publication-badge" href="https://github.com/RuixiangXue/NeRI" target="_blank" rel="noopener noreferrer">Project</a></li>
         
-            <li>Junteng Zhang#, <strong>Tong Chen#</strong>, Dandan Ding, and Zhan Ma, "YOGA: Yet Another Geometry-based Point Cloud Compressor", <em>ACM MM</em>, Oct. 2023. <a href="https://3dpcc.github.io/publication/YOGA/" target="_blank" rel="noopener noreferrer">[Project Website]</a></li>
+            <li>Junteng Zhang#, <strong>Tong Chen#</strong>, Dandan Ding, and Zhan Ma, "YOGA: Yet Another Geometry-based Point Cloud Compressor", <em>ACM MM</em>, Oct. 2023. <a class="publication-badge" href="https://3dpcc.github.io/publication/YOGA/" target="_blank" rel="noopener noreferrer">Project</a></li>
         
             <li><strong>Tong Chen</strong> and Zhan Ma. "Towards Robust Neural Image Compression: Adversarial Attack and Model Finetuning", <em>IEEE TCSVT</em>, 2023.</li>
         
-            <li><strong>Tong Chen</strong>, Haojie Liu, Zhan Ma, Qiu Shen, Xun Cao, and Yao Wang. "End-to-End Learnt Image Compression via Non-Local Attention Optimization and Improved Context Modeling", <em>IEEE TIP</em>, 2021. <a href="https://github.com/NJUVISION/NIC" target="_blank" rel="noopener noreferrer">[Project Website]</a></li>
+            <li><strong>Tong Chen</strong>, Haojie Liu, Zhan Ma, Qiu Shen, Xun Cao, and Yao Wang. "End-to-End Learnt Image Compression via Non-Local Attention Optimization and Improved Context Modeling", <em>IEEE TIP</em>, 2021. <a class="publication-badge" href="https://github.com/NJUVISION/NIC" target="_blank" rel="noopener noreferrer">Project</a></li>
             
         </ol>
-    </section>
-</body>
+</section>

@@ -3,8 +3,11 @@ layout: default
 ---
 <h1><span data-i18n="skills.my_skills">News</span></h1>
 
+{% assign academic_news_count = 0 %}
 {% for post in site.posts %}
 {% if post.categories[0] == "academic" %}
+{% assign academic_news_count = academic_news_count | plus: 1 %}
+{% if academic_news_count <= 5 %}
 <section class="post">
   <header class="post-header">
     <p class="post-meta">
@@ -23,7 +26,7 @@ layout: default
     <h4>
       <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title | escape }}">{{ post.title }}</a>
       {% if post.link %}
-      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title | escape }}"><i class="fa fa-external-link"></i></a>
+      <a class="post-title-link" href="{{ post.link }}" target="_blank" rel="noopener noreferrer" title="{{ post.title | escape }}"><i class="fa fa-external-link"></i></a>
       {% endif %}
     </h4>
     {% if post.author %}
@@ -56,7 +59,10 @@ layout: default
     <br>
 </section>
 {% endif %}
+{% endif %}
 {% endfor %}
+
+<p class="more-link"><a href="{{ site.url }}/categories/#academic">More news</a></p>
 
 {% include sections/publications.html %}
 {% include sections/about.html %}
