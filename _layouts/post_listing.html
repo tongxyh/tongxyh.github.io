@@ -35,7 +35,15 @@ layout: default
       {% assign author = site.owner %}
     {% endif %}
     </header>
-    {% if post.excerpt %}
+    {% if post.papers %}
+    <div class="post-description">
+      <ul class="news-paper-list">
+        {% for paper in post.papers %}
+        <li>{{ paper }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% elsif post.excerpt %}
     <div class="post-description">
       <p>
         {{ post.excerpt }}
