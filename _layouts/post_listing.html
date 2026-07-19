@@ -37,11 +37,16 @@ layout: default
     </header>
     {% if post.papers %}
     <div class="post-description">
+      {% assign paper_count = post.papers | size %}
+      {% if paper_count == 1 %}
+      <p class="news-paper-single">{{ post.papers[0] }}</p>
+      {% else %}
       <ul class="news-paper-list">
         {% for paper in post.papers %}
         <li>{{ paper }}</li>
         {% endfor %}
       </ul>
+      {% endif %}
     </div>
     {% elsif post.excerpt %}
     <div class="post-description">

@@ -1,18 +1,28 @@
-- name: Variable-rate Learned Image Compression (ICASSP2020)
-  descr: Implementation of ICASSP2020 paper "Variable Bitrate Image Compression with Quality Scaling Factors"
-  image: 
-  github: https://github.com/tongxyh/ImageCompression_VariableRate
-  website: https://github.com/tongxyh/ImageCompression_VariableRate
+- name: 2D Image Compression
+  descr: Learned image compression, variable-rate coding, and semantic residual coding.
+  projects:
+    - name: ResULIC
+      descr: Ultra-low-rate image compression with semantic residual coding and compression-aware diffusion.
+      github: https://github.com/NJUVISION/ResULIC
+    - name: NIC
+      descr: End-to-end learned image compression with non-local attention and improved context modeling.
+      github: https://github.com/tongxyh/NIC
+    - name: Variable-rate Learned Image Compression
+      descr: Variable bitrate image compression with quality scaling factors.
+      github: https://github.com/tongxyh/ImageCompression_VariableRate
 
-- name: RENO (CVPR2025)
-  descr: Real-time LiDAR point cloud compression
-  image: Projects/reno.png
-  github: https://github.com/NJUVISION/RENO
-  website: 
-# - name: kcats
-#   descr: kcats is a stack implementation in node that allows multiple stacks to be created in one object. 
-#   image: pong.png
-#   github: https://github.com/JakenHerman/kcats
-#   website: https://jakenherman.com/kcats
-
-
+- name: 3D Point Cloud and Gaussian Splatting
+  descr: Point cloud quality assessment, LiDAR compression, and scalable 3D Gaussian Splatting.
+  projects:
+    - name: RENO
+      descr: Real-time neural compression for 3D LiDAR point clouds.
+      github: https://github.com/NJUVISION/RENO
+    - name: NeRI
+      descr: Implicit neural representation of LiDAR point clouds using range image sequences.
+      github: https://github.com/RuixiangXue/NeRI
+    - name: PQI
+      descr: Multiscale-inspired point cloud quality assessment.
+      github: https://github.com/3dpcc/PQI
+    - name: ScalableGSC
+      descr: Object-scalable 3D Gaussian Splatting compression.
+      github: https://github.com/RuixiangXue/ScalableGSC
