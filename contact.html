@@ -1,44 +1,23 @@
 ---
 layout: page
-title:  Contact
+title: Contact
 permalink: /contact/
 ---
 
-<style>
-    .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    width: 46%;
-    display: inline-block;
-    }
+<section class="contact-methods" aria-label="Contact methods">
+  <a class="contact-method" href="mailto:chentong@nju.edu.cn">
+    <i class="fas fa-envelope" aria-hidden="true"></i>
+    <div>
+      <h3>Email</h3>
+      <p>chentong@nju.edu.cn</p>
+    </div>
+  </a>
 
-    /* Add rounded corners to the top left and the top right corner of the image */
-    span {
-    border-radius: 5px 5px 0 0;
-    }
-</style>
-
-<html>
-  <body>
-    <a href="mailto:chentong@nju.edu.cn">
-      <div class="card">
-        <span style="width:50px; height: 75px; background-color: purple" href="mailto:tong@smail.nju.edu.cn"></span>
-        <div class="container">
-          <h4><b>Email Me</b></h4> 
-          <p>chentong@nju.edu.cn</p> 
-        </div>
-      </div>
-    </a>
-
-    <a href="https://github.com/tongxyh/tongxyh.github.io/">
-      <div class="card">
-        <span style="width:50px; height: 75px; background-color: purple" href="mailto:tong@smail.nju.edu.cn"></span>
-        <div class="container">
-          <h4><b>Want to know more?</b></h4> 
-          <p>Visit my GitHub</p> 
-        </div>
-      </div>
-    </a>
-  </body>
-</html>
+  <a class="contact-method" href="https://github.com/tongxyh/tongxyh.github.io/" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-github" aria-hidden="true"></i>
+    <div>
+      <h3>Website source</h3>
+      <p>View this website on GitHub.</p>
+    </div>
+  </a>
+</section>

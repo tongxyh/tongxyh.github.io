@@ -261,6 +261,7 @@ GEM
     unf_ext (0.0.7.7)
     unf_ext (0.0.7.7-x64-mingw32)
     unicode-display_width (1.7.0)
+    webrick (1.8.1)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -275,6 +276,7 @@ DEPENDENCIES
   kramdown (>= 2.3.0)
   nokogiri (>= 1.11.0)
   tzinfo-data
+  webrick
 
 BUNDLED WITH
    2.1.4

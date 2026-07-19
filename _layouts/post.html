@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<a class="btn" href= "{{ site.url }}/" >
+<a class="btn" href="{{ '/' | relative_url }}">
   Home
 </a>
 {% if page.image.feature %}
@@ -11,7 +11,7 @@ layout: default
   {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
   "{{ page.image.feature }}"
   {% else %}
-  "{{ site.url }}/img/{{ page.image.feature }}"
+  "{{ '/img/' | append: page.image.feature | relative_url }}"
   {% endif %}
   alt="{{ page.title | escape }} feature image">
 
@@ -37,23 +37,25 @@ layout: default
 
 </div>
 
-<div class="share-buttons">
+{% assign share_url = site.url | append: page.url | uri_escape %}
+{% assign share_title = page.title | uri_escape %}
+<div class="share-buttons" aria-label="Share this article">
   <h6>Share on: </h6>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text={{ share_title }}" class="twitter btn" target="_blank" rel="noopener noreferrer" title="Share on X"><i class="fa fa-twitter" aria-hidden="true"></i><span> X</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" class="facebook btn" target="_blank" rel="noopener noreferrer" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" class="linkedin btn" target="_blank" rel="noopener noreferrer" title="Share on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
     </li>
     <li>
-      <a href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
+      <a href="https://news.ycombinator.com/submitlink?u={{ share_url }}&amp;t={{ share_title }}" class="hacker-news btn" target="_blank" rel="noopener noreferrer" title="Share on Hacker News"><i class="fa fa-hacker-news" aria-hidden="true"></i><span> Hacker News</span></a>
     </li>
     <li>
-      <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+      <a href="https://www.reddit.com/submit?url={{ share_url }}&amp;title={{ share_title }}" class="reddit btn" target="_blank" rel="noopener noreferrer" title="Share on Reddit"><i class="fa fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>
     </li>
   </ul>
 </div><!-- end share-buttons -->

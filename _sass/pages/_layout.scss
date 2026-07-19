@@ -140,6 +140,56 @@
   white-space: nowrap;
 }
 
+.publication-note {
+  color: $secondary;
+  font-size: 0.9em;
+  margin: 0.5rem 0 1.5rem;
+
+  span + span::before {
+    content: " ";
+  }
+}
+
+.contact-methods {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1.5rem 0;
+}
+
+.contact-method {
+  align-items: flex-start;
+  border: 1px solid $hr-border-color;
+  border-radius: 6px;
+  color: $text-color;
+  display: flex;
+  gap: 0.8rem;
+  min-height: 120px;
+  padding: 1rem;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    border-color: $primary;
+    color: $text-color;
+  }
+
+  i {
+    color: $primary;
+    font-size: 1.25rem;
+    margin-top: 0.2rem;
+  }
+
+  h3,
+  p {
+    margin: 0;
+  }
+
+  p {
+    margin-top: 0.3rem;
+  }
+}
+
 .section-nav {
   border-bottom: 1px solid $hr-border-color;
   margin: 0 0 1.25rem;

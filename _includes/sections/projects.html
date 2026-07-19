@@ -13,7 +13,7 @@
                 {% endif %}
                 {% if project.image %}
                 <div class="project-image">
-                    <img src="{{site.url}}/img/{{ project.image }}" alt="{{ project.name }}">
+                    <img src="{{ '/img/' | append: project.image | relative_url }}" alt="{{ project.name }}">
                 </div>
                 {% endif %}</div>
             </div>

@@ -7,10 +7,5 @@ bundle exec jekyll serve
 ssh-add ~/.ssh/tong-key
 git add xxx
 git commit xxx
-git push 
+git push
 ```
-
-# TODO
-- Add Google Scholar link
-https://scholar.google.com/citations?hl=en&user=HfBUtiIAAAAJ
--
