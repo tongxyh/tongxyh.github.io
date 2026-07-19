@@ -81,50 +81,107 @@
 }
 
 .research-project-group {
-  border-top: 1px solid $hr-border-color;
-  margin: 1.5rem 0 2rem;
-  padding-top: 1.25rem;
+  margin: 1.5rem 0 2.25rem;
 }
 
 .research-project-heading {
-  margin-bottom: 1rem;
+  align-items: baseline;
+  border-top: 2px solid $text-color;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(190px, 0.7fr) minmax(0, 1.5fr);
+  padding: 0.85rem 0;
 
   h2,
   p {
     margin: 0;
   }
 
+  h2 {
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+
   p {
     color: $secondary;
-    margin-top: 0.35rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }
 
-.research-project-grid {
-  display: grid;
-  gap: 0.75rem;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-}
+.research-project-list {
+  border-bottom: 1px solid $hr-border-color;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-.research-project {
-  border-left: 3px solid lighten($primary, 20%);
-  min-height: 130px;
-  padding: 0.1rem 0 0.4rem 0.85rem;
-
-  h3 {
-    font-size: 1.05rem;
+  li {
+    border-top: 1px solid $hr-border-color;
     margin: 0;
   }
+}
 
-  p {
-    font-size: 0.92rem;
-    line-height: 1.4;
-    margin: 0.35rem 0 0.55rem;
+.research-project-link {
+  align-items: center;
+  color: $text-color;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(190px, 0.7fr) minmax(0, 1.5fr) 1.25rem;
+  padding: 0.8rem 0;
+
+  strong {
+    line-height: 1.35;
   }
 
-  a {
-    font-size: 0.9rem;
-    font-weight: 600;
+  span {
+    color: $secondary;
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+
+  i {
+    color: $primary;
+    font-size: 1rem;
+    justify-self: end;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary;
+
+    span {
+      color: $text-color;
+    }
+  }
+
+  @include media-query($small-screen) {
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  .research-project-heading {
+    display: block;
+
+    p {
+      margin-top: 0.35rem;
+    }
+  }
+
+  .research-project-link {
+    gap: 0.3rem 0.75rem;
+    grid-template-columns: minmax(0, 1fr) 1.25rem;
+
+    strong,
+    span {
+      grid-column: 1;
+    }
+
+    i {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
   }
 }
 

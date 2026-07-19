@@ -6,14 +6,16 @@
         <h2>{{ direction.name }}</h2>
         <p>{{ direction.descr }}</p>
     </div>
-    <div class="research-project-grid">
+    <ul class="research-project-list">
         {% for project in direction.projects %}
-        <article class="research-project">
-            <h3>{{ project.name }}</h3>
-            <p>{{ project.descr }}</p>
-            <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
-        </article>
+        <li>
+            <a class="research-project-link" href="{{ project.github }}" target="_blank" rel="noopener noreferrer" aria-label="Open the {{ project.name }} GitHub repository">
+                <strong>{{ project.name }}</strong>
+                <span>{{ project.descr }}</span>
+                <i class="fa fa-github" aria-hidden="true" title="GitHub repository"></i>
+            </a>
+        </li>
         {% endfor %}
-    </div>
+    </ul>
 </section>
 {% endfor %}
