@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "One paper accepted by ACM MM 2026"
+title:  "One paper accepted by ACM MM 2026 (Oral)"
 date:   2026-07-20 00:00:00 +0800
 excerpt: "SpeedyGS: Content-Aware 3D Gaussian Splatting Compression via Two-Stage Optimization"
 papers:
